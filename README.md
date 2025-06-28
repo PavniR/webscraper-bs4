@@ -49,15 +49,16 @@ However, many modern websites use JavaScript to load or update content after the
 - `requests` doesn't execute JavaScript, and
 - `bs4` can only see the initial, static HTML, not the dynamic content added later.
 
-As a result, `requests` + `bs4` can't access data beyond what's already in the raw HTML — such as the rest of the movie listings beyond the first 25.
+As a result, `requests` + `bs4` can't access data beyond what's already in the raw HTML such as the rest of the movie listings beyond the first 25.
 
 This project uses `requests` + `BeautifulSoup` for static scraping, which is lightweight and efficient, but limited to preloaded content.
 
-To scrape dynamically loaded content, we need tools that can simulate a browser and execute JavaScript — such as Selenium or Playwright.
+To scrape dynamically loaded content, we need tools that can simulate a browser and execute JavaScript, such as Selenium or Playwright.
 
 
 
 For that, I have created a separate script for **Dynamic Scraping** using Selenium Webdriver:
+
 🔗 [WebScraper using Selenium Webdriver](https://github.com/PavniR/webscraper-selenium)
 
 
